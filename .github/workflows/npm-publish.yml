@@ -22,5 +22,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           default: ${{github.event.release.tag_name}}
-          target-branch: 'master'
+          target-branch: 'main'
           commit-message: 'ci: bumps version to {{version}} [skip ci]'
